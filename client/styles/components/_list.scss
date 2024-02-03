@@ -1,0 +1,30 @@
+.list {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ecf0f1;
+    input {
+        flex: 1 1 0%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        margin-right: 10px;
+    }
+
+    input:hover {
+        background-color: #f5f5f5;
+    }
+}
+
+.text {
+    flex: 1 1 0%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.text:focus {
+    outline: none;  
+}

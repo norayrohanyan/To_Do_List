@@ -1,0 +1,18 @@
+@use '../../variables/variable';
+@use '../../mixins/mixins';
+
+.addButton {
+    @include mixins.button(variable.$addButtonColor, variable.$buttonTextColor);
+}
+
+.sortButton {
+    @include mixins.button(variable.$addButtonColor, variable.$buttonTextColor);
+}
+
+.deleteButton {
+    @include mixins.button(variable.$deleteButtonColor, variable.$buttonTextColor);
+}
+
+.editButton {
+    @include mixins.button(variable.$editButtonColor, variable.$buttonTextColor);
+}

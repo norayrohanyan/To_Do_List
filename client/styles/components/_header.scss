@@ -1,0 +1,10 @@
+@use '../variables/variable';
+
+.title {
+    text-align: center;
+    color: variable.$textColor;
+    margin: 0;
+    padding: 20px;
+    background-color: variable.$headerBackground;
+    border-bottom: 2px solid variable.$textColor;
+}

@@ -1,0 +1,54 @@
+@use '../../placeholders/placeholder';
+
+.container {
+    @extend %centerDiv;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ecf0f1;
+    font-size: 14px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    border: 1px solid #3498db;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.card.active::before {
+    content: "";
+    width: 90%;
+    height: 1px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 10px;
+    position: absolute;
+}
+
+.search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3498db;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.search:focus {
+    outline: none;
+}
